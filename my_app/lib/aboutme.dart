@@ -139,7 +139,7 @@ class AboutMe extends StatelessWidget {
             const SizedBox(height: 30),
 
 
-            // ---------------- SKILLS ----------------
+           
 
             sectionTitle(
               Icons.code,
@@ -199,7 +199,7 @@ class AboutMe extends StatelessWidget {
 
             const SizedBox(height: 30),
 
-            // ---------------- CONNECT ----------------
+           
 
             sectionTitle(
               Icons.link,
@@ -231,7 +231,7 @@ class AboutMe extends StatelessWidget {
 
             const SizedBox(height: 40),
 
-            // ---------------- FOOTER ----------------
+        
 
             const Center(
               child: Text(
@@ -250,9 +250,7 @@ class AboutMe extends StatelessWidget {
     );
   }
 
-  // ==================================================
-  // SECTION TITLE
-  // ==================================================
+  
 
   Widget sectionTitle(
       IconData icon,
@@ -281,9 +279,7 @@ class AboutMe extends StatelessWidget {
     );
   }
 
-  // ==================================================
-  // INFORMATION CARD
-  // ==================================================
+ 
 
   Widget infoCard({
     required IconData icon,
@@ -347,9 +343,7 @@ class AboutMe extends StatelessWidget {
     );
   }
 
-  // ==================================================
-  // SKILL CHIP
-  // ==================================================
+ 
 
   Widget skillChip(String skill) {
     return Container(
@@ -378,9 +372,7 @@ class AboutMe extends StatelessWidget {
     );
   }
 
-  // ==================================================
-  // SOCIAL BUTTON
-  // ==================================================
+  
 
   Widget socialButton(IconData icon) {
     return Container(

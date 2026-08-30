@@ -109,7 +109,7 @@ class _MyProjectState extends State<MyProject> {
             children: [
               const SizedBox(height: 20),
 
-              // Create a card for every project
+             
               ...projects.map(
                 (project) => projectCard(
                   technology: project['technology'],
@@ -212,7 +212,7 @@ class _MyProjectState extends State<MyProject> {
               Row(
                 children: [
 
-                  // STAR ICON
+                  
                   const Icon(
                     Icons.star,
                     color: Colors.white70,
@@ -223,7 +223,7 @@ class _MyProjectState extends State<MyProject> {
                     width: 4,
                   ),
 
-                  // RATING
+                
                   Text(
                     rating,
                     style: const TextStyle(

@@ -19,7 +19,7 @@ class _MyHomeState extends State<MyHome> {
             fontSize: 30,
             color: Colors.black,
             fontWeight: FontWeight.bold,
-            //foreground: Paint()..shader = overallTextGradient,
+            
           ),
           text,
         ),
@@ -70,10 +70,10 @@ class _MyHomeState extends State<MyHome> {
   Widget mySpecialization(dynamic iconOrWidget, String label) {
     return Column(
       children: [
-        // Check if it's IconData or a Widget
+        
         iconOrWidget is IconData
-            ? Icon(iconOrWidget, size: 40) // Render as Icon
-            : iconOrWidget,                // Render as Widget (e.g., Image.asset)
+            ? Icon(iconOrWidget, size: 40) 
+            : iconOrWidget,                
 
         SizedBox(height: 10),
         Text(label),
@@ -128,16 +128,14 @@ class _MyHomeState extends State<MyHome> {
           elevation: 8,
           cornerRadius: 16,
           snapSpec: const SnapSpec(
-            // Enable snapping. This is true by default.
+           
             snap: true,
-            // Set custom snapping points.
+           
             snappings: [0.4, 0.7, 1.0],
-            // Define to what the snappings relate to. In this case,
-            // the total available space that the sheet can expand to.
+           
             positioning: SnapPositioning.relativeToAvailableSpace,
           ),
-          // The body widget will be displayed under the SlidingSheet
-          // and a parallax effect can be applied to it.
+          
           body: Stack(
             children: [
               Container(
@@ -170,9 +168,7 @@ class _MyHomeState extends State<MyHome> {
             ],
           ),
           builder: (context, state) {
-            // This is the content of the sheet that will get
-            // scrolled, if the content is bigger than the available
-            // height of the sheet.
+            
             return Container(
               margin: EdgeInsets.only(left: 20, right: 20, top: 30),
               height: 500,
