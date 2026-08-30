@@ -10,9 +10,7 @@ class MyProject extends StatefulWidget {
 }
 
 class _MyProjectState extends State<MyProject> {
-  // ============================================================
-  // PROJECT LIST
-  // ============================================================
+ 
 
   final List<Map<String, dynamic>> projects = [
     {
@@ -52,9 +50,7 @@ class _MyProjectState extends State<MyProject> {
     },
   ];
 
-  // ============================================================
-  // OPEN GITHUB
-  // ============================================================
+  
 
   Future<void> openGitHub(String githubUrl) async {
     final Uri url = Uri.parse(githubUrl);
@@ -73,18 +69,14 @@ class _MyProjectState extends State<MyProject> {
     }
   }
 
-  // ============================================================
-  // BUILD
-  // ============================================================
+  
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
 
-      // ========================================================
-      // APP BAR
-      // ========================================================
+     
 
       appBar: AppBar(
         backgroundColor: const Color(0xff252525),
@@ -109,9 +101,7 @@ class _MyProjectState extends State<MyProject> {
         ),
       ),
 
-      // ========================================================
-      // BODY
-      // ========================================================
+     
 
       body: SingleChildScrollView(
         child: Center(
@@ -138,9 +128,7 @@ class _MyProjectState extends State<MyProject> {
     );
   }
 
-  // ============================================================
-  // PROJECT CARD
-  // ============================================================
+ 
 
   Widget projectCard({
     required String technology,
@@ -176,9 +164,7 @@ class _MyProjectState extends State<MyProject> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
 
-              // ==================================================
-              // TECHNOLOGY
-              // ==================================================
+             
 
               Text(
                 technology,
@@ -192,9 +178,7 @@ class _MyProjectState extends State<MyProject> {
                 height: 15,
               ),
 
-              // ==================================================
-              // PROJECT NAME
-              // ==================================================
+             
 
               Text(
                 name,
@@ -209,9 +193,7 @@ class _MyProjectState extends State<MyProject> {
                 height: 3,
               ),
 
-              // ==================================================
-              // DESCRIPTION
-              // ==================================================
+              
 
               Text(
                 description,
@@ -225,9 +207,7 @@ class _MyProjectState extends State<MyProject> {
                 height: 10,
               ),
 
-              // ==================================================
-              // BOTTOM ROW
-              // ==================================================
+              
 
               Row(
                 children: [
@@ -252,12 +232,10 @@ class _MyProjectState extends State<MyProject> {
                     ),
                   ),
 
-                  // Push GitHub icon to the right
+                  
                   const Spacer(),
 
-                  // ==================================================
-                  // GITHUB BUTTON
-                  // ==================================================
+                  
 
                   IconButton(
                     tooltip: 'Open GitHub',
