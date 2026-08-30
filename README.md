@@ -26,7 +26,7 @@ Screenshot
 
 How to Run the Project Locally
 
-1. git clone YOUR_GITHUB_REPOSITORY_URL
+1. git clone https://github.com/Ankoder-tech/Portfolio-App.git
 2. cd my_app
 3. flutter pub get
 4. Start an Android Emulator from Android Studio
